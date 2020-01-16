@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  /*background: linear-gradient(25deg, white 0%, #F0F8FF 55%);*/
+  background: repeating-linear-gradient(
+  45deg,
+  white,
+  white 1px,
+  #F0F8FF 1px,
+  #F0F8FF 10px
+);
+  background-position: absolute;
+}
+
+#container {
+  background-color: #435769;
+  width: 400px;
+  margin: auto;
+  /*border-radius: 10px;*/
+  height: 100%;
+  box-shadow: 1px 1px 3px #CED5DB;
+}
+
+h2 {
+  padding-top: 15px;
+  margin-left: 20px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 2.8em;
+  margin-bottom: 15px;
+}
+
+#calculator {
+  background-color: #DBE2E8;
+  margin-top: 0px;
+  padding: 3px 20px 10px 20px;
+  /*border-radius: 0px 0px 10px 10px;*/
+}
+
+h3 {
+  font-family: 'Scope One', serif;
+}
+
+#billAmt {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  margin-top: -10px;
+  text-indent: 5px;
+}
+
+input[type="text"] {
+  background-color: white;
+  color: black;
+  padding-left: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#servicequality {
+  /*width: 100%;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  margin-top: -15px;*/
+}
+
+#billSplit {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  margin-top: -10px;
+  text-indent: 5px;
+}
+
+#calculate {
+  width: 100%;
+  height: 40px;
+  border-style: none;
+  background-color: #b53697;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  border-radius: 5px;
+}

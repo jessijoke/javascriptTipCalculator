@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tip Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Scope+One&display=swap" rel="stylesheet">
+  
+</header>
+
+<body>
+  <div id="container">
+
+    <h2>Tip Calculator</h2>
+
+    <div id="calculator">
+
+      <div id="form">
+        <form>
+          <h3>How much was your bill?</h3>
+
+          <input id="billAmt"  type="number" placeholder="Bill Amount"  min="0" required />
+          <!--
+    <h3><p>How was the service?</p>
+
+    <select id="servicequality">
+
+    <option>Select One </option>
+
+    <option value="0.1">10%-Average</option>
+
+    <option value="0.2">20%-Good</option>
+
+    <option value="0.3">30%-Excellent</option>
+
+    </select></h3>
+      -->
+          <h3>How much would you like to tip?</h3>
+            <input type="radio" id="servicequality10" name="service" value="0.1">
+            <label for="10percent">10%</label>
+
+            <input type="radio" id="servicequality15" name="service" value="0.15">
+            <label for="15percent">15%</label>
+
+            <input type="radio" id="servicequality20" name="service" value="0.20" checked>
+            <label for="20percent">20%</label>
+
+            <input type="radio" id="servicequality25" name="service" value="0.25">
+            <label for="25percent">25%</label>
+
+            <input type="radio" id="servicequality30" name="service" value="0.3">
+            <label for="30percent">30%</label>
+
+          
+
+          <h3>Split the bill?</h3>
+
+            <input id="billSplit" type="number" placeholder="Between how many people?" min="1" and step="1" required>
+          
+
+          <!--<button type="button" id="calculate">Calculate!</button>-->
+
+      </div>
+
+      <div id="totaltip">
+
+        <h3>Tip Total: $
+
+          <span id=tipTotal></span></h3>
+
+        <h3>Bill Total: $
+
+          <span id=billTotal></span></h3>
+
+        <h3>Per Person: $
+
+          <span id=perPerson></span>
+        </h3>
+        </form>
+      </div>
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
